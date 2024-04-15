@@ -4,10 +4,12 @@
 import express from "express";
 
 const app = express();
+import { BACKEND_URL } from "@repo/common/config";
+
 
 app.get("/",(req,res) => {
     res.json({
-        message:"Hello DUNIYA"
+        message:BACKEND_URL
     })
 })
 
